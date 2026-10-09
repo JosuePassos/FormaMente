@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça o catálogo FormaMente e encontre o que combina com você.">
+    <meta name="theme-color" content="#f8f7f3">
+    <title>FormaMente — Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="FormaMente, início">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>Forma<span class="brand-light">Mente</span></span>
+      </a>
+      <a class="header-link" href="#catalogo">Explorar catálogo <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Catálogo FormaMente</p>
+        <h1 id="hero-title">Escolhas que têm <span>forma.</span></h1>
+        <p class="hero-copy">Explore nossos produtos e encontre o seu próximo favorito.</p>
+        <a class="hero-link" href="#catalogo">Ver produtos <span aria-hidden="true">↓</span></a>
+        <span class="hero-orbit orbit-one" aria-hidden="true"></span>
+        <span class="hero-orbit orbit-two" aria-hidden="true"></span>
+      </section>
+
+      <section class="catalog section-wrap" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Feito para descobrir</p>
+            <h2 id="catalog-title">Nosso catálogo</h2>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="catalog-controls">
+          <label class="search-field">
+            <span class="visually-hidden">Buscar produtos</span>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="O que você está procurando?" autocomplete="off">
+          </label>
+          <label class="filter-field">
+            <span class="visually-hidden">Filtrar por categoria</span>
+            <select id="category-filter">
+              <option value="all">Todas as categorias</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>Nenhum produto encontrado. Tente outra busca.</p>
+        <p class="order-status" id="order-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="contact-banner section-wrap" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Vamos conversar?</p>
+          <h2 id="contact-title">Seu próximo favorito está a uma mensagem.</h2>
+        </div>
+        <a class="contact-link" href="#catalogo">Escolher um produto <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>Forma<span class="brand-light">Mente</span></span>
+      </a>
+      <p>© <span id="year"></span> FormaMente. Personalize este catálogo para o seu projeto.</p>
+    </footer>
+  </body>
+</html>
